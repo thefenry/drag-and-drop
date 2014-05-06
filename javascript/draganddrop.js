@@ -16,8 +16,22 @@ function startDrag(e){
 
 function dropped(e){
 	e.preventDefault();
-	console.log(e.dataTransfer.getData('Text'))
 	leftbox.innerHTML = e.dataTransfer.getData('Text');
 };
 
 window.addEventListener("load", doFirst, false);
+
+
+
+////////////////////////////////////////
+//					Dragable boxes						//
+////////////////////////////////////////
+
+function handleDragStart(e) {
+  this.style.opacity = '0.4';  // this / e.target is the source node.
+}
+
+var cols = document.querySelectorAll('#columns .column');
+[].forEach.call(cols, function(cols) {
+  col.addEventListener('dragstart', handleDragStart, false);
+});

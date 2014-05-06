@@ -1,3 +1,7 @@
+/***********************
+		IMAGE-BOXES
+***********************/
+
 #leftbox{
 	text-align:center;
 	float: left;
@@ -17,7 +21,32 @@
 	border: 3px solid green;
 	line-height: 250px;
 }
+
 img{
 	display:block;
 	margin: auto;
+}
+
+
+
+/***********************
+		PLAYFUL-BOXES
+***********************/
+
+#playful-boxes {
+	background-color: #787878;
+	clear: both;
+	text-align: center;
+}
+
+section .boxes{
+	display: inline-block;
+	width:15.625em;
+	height: 15.625em;
+	margin: 3px;
+	margin: 30px 0px;
+	background-color: #B0C010;
+	text-align: center;
+	line-height: 15.625em;
+	cursor: move;
 }
